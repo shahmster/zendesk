@@ -16,11 +16,13 @@
     // Initialise Apps framework client. See also:
     // https://developer.zendesk.com/apps/docs/developer-guide/getting_started
     var client = ZAFClient.init();
-    var subject = zafClient.get('ticket.subject');
-    var elem =document.getElementById('subject');
-    console.log(elem);
-    console.log(subject);
-    elem.value=subject;
+    var subject = client.get('ticket.subject').then(res=>{
+
+      var elem = document.getElementById('subject');
+      elem.innerText = res['ticket.subject'];
+
+    });
+    
     client.invoke('resize', { width: '100%', height: '200px' });
   </script>
 </body>
