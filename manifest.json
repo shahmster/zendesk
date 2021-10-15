@@ -1,5 +1,5 @@
 {
-  "name": "1sream-test-app",
+  "name": "onestream-hello-world",
   "author": {
     "name": "mohammed shah",
     "email": "shahmster@gmail.com",
@@ -12,7 +12,12 @@
       "ticket_sidebar": {
         "url": "assets/iframe.html",
         "flexible": true
-      }
+      },
+      "nav_bar": "assets/iframe.html",
+      "background": {
+        "url": "assets/iframe.html"
+      },
+      "top_bar": "assets/iframe_top.html"
     }
   },
   "version": "1.0",
